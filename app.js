@@ -11,44 +11,44 @@ document.addEventListener('DOMContentLoaded', () => {
       img: 'images/Hogwarts.jpg'
     },
     {
-      name: 'image2',
-      img: 'images/image2.jpg'
+      name: 'Grifondoro',
+      img: 'images/Grifondoro.jpg'
     },
     {
-      name: 'image2',
-      img: 'images/image2.jpg'
+      name: 'Grifondoro',
+      img: 'images/Grifondoro.jpg'
     },
     {
-      name: 'image3',
-      img: 'images/image3.jpg'
+      name: 'Serpeverde',
+      img: 'images/Serpeverde.jpg'
     },
     {
-      name: 'image3',
-      img: 'images/image3.jpg'
+      name: 'Serpeverde',
+      img: 'images/Serpeverde.jpg'
     },
     {
-      name: 'image4',
-      img: 'images/image4.jpg'
+      name: 'Corvonero',
+      img: 'images/Corvonero.jpg'
     },
     {
-      name: 'image4',
-      img: 'images/image4.jpg'
+      name: 'Corvonero',
+      img: 'images/Corvonero.jpg'
     },
     {
-      name: 'image5',
-      img: 'images/image5.jpg'
+      name: 'Tassorosso',
+      img: 'images/Tassorosso.jpg'
     },
     {
-      name: 'image5',
-      img: 'images/image5.jpg'
+      name: 'Tassorosso',
+      img: 'images/Tassorosso.jpg'
     },
     {
-      name: 'image6',
-      img: 'images/image6.jpg'
+      name: 'Prefect',
+      img: 'images/Prefect.jpg'
     },
     {
-      name: 'image6',
-      img: 'images/image6.jpg'
+      name: 'Prefect',
+      img: 'images/Prefect.jpg'
     }
   ]
 
@@ -56,11 +56,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //create board
   function createBoard() {
-    for (let i = 0; i< cardArray.length; i++) {
+    for (let i = 0; i < cardArray.length; i++) {
       var card = document.createElement('img')
-      card.setAttribute('src', 'images/blank.jpg')
+      card.setAttribute('src', 'images/HPback.jpg')
       card.setAttribute('data-id', i)
-      card.addEventListener('click')
+      //card.addEventListener('click', flipcard)
+      grid.appendChild(card)
     }
   }
+
+  createBoard()
 })
