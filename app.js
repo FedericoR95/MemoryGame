@@ -3,12 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
   //card options
   const cardArray = [
     {
-      name: 'image1',
-      img: 'images/image1.jpg'
+      name: 'Hogwarts',
+      img: 'images/Hogwarts.jpg'
     },
     {
-      name: 'image1',
-      img: 'images/image1.jpg'
+      name: 'Hogwarts',
+      img: 'images/Hogwarts.jpg'
     },
     {
       name: 'image2',
