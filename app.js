@@ -4,51 +4,51 @@ document.addEventListener('DOMContentLoaded', () => {
   const cardArray = [
     {
       name: 'image1',
-      img: 'images/image1.pgn'
-    }
+      img: 'images/image1.jpg'
+    },
     {
       name: 'image1',
-      img: 'images/image1.pgn'
-    }
+      img: 'images/image1.jpg'
+    },
     {
       name: 'image2',
-      img: 'images/image2.pgn'
-    }
+      img: 'images/image2.jpg'
+    },
     {
       name: 'image2',
-      img: 'images/image2.pgn'
-    }
+      img: 'images/image2.jpg'
+    },
     {
       name: 'image3',
-      img: 'images/image3.pgn'
-    }
+      img: 'images/image3.jpg'
+    },
     {
       name: 'image3',
-      img: 'images/image3.pgn'
-    }
+      img: 'images/image3.jpg'
+    },
     {
       name: 'image4',
-      img: 'images/image4.pgn'
-    }
+      img: 'images/image4.jpg'
+    },
     {
       name: 'image4',
-      img: 'images/image4.pgn'
-    }
+      img: 'images/image4.jpg'
+    },
     {
       name: 'image5',
-      img: 'images/image5.pgn'
-    }
+      img: 'images/image5.jpg'
+    },
     {
       name: 'image5',
-      img: 'images/image5.pgn'
-    }
+      img: 'images/image5.jpg'
+    },
     {
       name: 'image6',
-      img: 'images/image6.pgn'
-    }
+      img: 'images/image6.jpg'
+    },
     {
       name: 'image6',
-      img: 'images/image6.pgn'
+      img: 'images/image6.jpg'
     }
   ]
 
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function createBoard() {
     for (let i = 0; i< cardArray.length; i++) {
       var card = document.createElement('img')
-      card.setAttribute('src', 'images/blank.png')
+      card.setAttribute('src', 'images/blank.jpg')
       card.setAttribute('data-id', i)
       card.addEventListener('click')
     }
