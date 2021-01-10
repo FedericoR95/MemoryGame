@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             var card = document.createElement('img')
             card.setAttribute('src', 'images/HPback.png')
             card.setAttribute('data-id', i)
-            card.addEventListener('click', flipcard)
+            card.addEventListener('click', flipCard)
             grid.appendChild(card)
         }
     }
@@ -75,20 +75,16 @@ document.addEventListener('DOMContentLoaded', () => {
         var cards = document.querySelectorAll('img')
         const optionOneId = cardsChosenId[0]
         const optionTwoId = cardsChosenId[1]
-        if (optionOneId == optionTwoId) {
-            alert('You found a match')
-            cards[optionOneId].setAttribute('src', optionOneId.img) //queste due righe
-            cards[optionTwoId].setAttribute('src', optionTwoId.img) //potrei non metterle?
+        if (cardsChosen[0] === cardsChosen[1]) {
             cardsMatched.push(cardsChosen)
         } else {
             cards[optionOneId].setAttribute('src', 'images/HPback.png')
             cards[optionTwoId].setAttribute('src', 'images/HPback.png')
-            alert('Not a match')
         }
         cardsChosen = []
         cardsChosenId = []
         scoreDisplay.textContent = cardsMatched.length
-        if (cardsMatched == cardArray.length / 2) {
+        if (cardsMatched.length === cardArray.length / 2) {
             scoreDisplay.textContent = 'Bravo scemo'
         }
     }
@@ -98,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsChosen.push(cardArray[cardId].name)
         cardsChosenId.push(cardId)
         this.setAttribute('src', cardArray[cardId].img)
-        if (cardsChosen.length == 2) {
+        if (cardsChosen.length === 2) {
             setTimeout(checkForMatch, 500) //buffertime: così le cose succedono lente
         }
     }
